@@ -37,7 +37,7 @@ The Paleclick program reads all of its configuration data. Please keep in mind t
 * config.json
 
 
-### ✨After researching and looking into different clicking methods, we have came up with several of the most popular ones:
+### ✨After researching and looking into different clicking methods, we have come up with several of the most popular ones:
 * Jitter Clicking
 * Butterfly Clicking
 * Delayed Drag Clicking (Normal Drag Clicking)
