@@ -1,4 +1,4 @@
-## PALECLICK [![MIT License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)]
+## PALECLICK V1.2 [![MIT License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)]
 
 An AutoClicker designed for those who are terrible at clicking and Minecraft PvP.
 ## Built with ❤️ by Nitlix
@@ -25,6 +25,8 @@ In short terms, Paleclick is trying to achieve a true simulation of regular clic
 
 * Paleclick (Advanced clicking engine)
 <img src="https://user-images.githubusercontent.com/66027553/155401334-93931cf9-9638-4b29-b8b4-36fbdfa6f8d7.png" width="433" height="133">
+
+**❗ I would like to quickly point out that your usage of this script will be tracked. But it is only for statistics, you are not going to be sending us any other info than just the fact that your script is open and what type of clicking you are using.**
 
 # 2. 📚 Documentation
 
