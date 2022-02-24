@@ -34,7 +34,9 @@ The Paleclick program reads all of its configuration data. Please keep in mind t
 
 **Files included in the package:**
 * PaleClick.exe
-* config.json
+
+**❗ config.json will be downloaded and installed. This is why this .exe file might be flagged as a virus.**
+* It is installed everytime the script notices that it is corrupt or does not exist.
 
 
 ### ✨After researching and looking into different clicking methods, we have come up with several of the most popular ones:
