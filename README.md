@@ -1,6 +1,7 @@
 ## PALECLICK V1.2 [![MIT License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)]   
 
 An AutoClicker designed for those who are terrible at clicking and Minecraft PvP.
+# _**NOT PUBLISHED YET**_
 #### Currently only Supports:
 *  <img src="https://pnggrid.com/wp-content/uploads/2021/06/Windows-11-Icon-Logo.png" width="15" height="15"> Windows
 ## Built with ❤️ by Nitlix
