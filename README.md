@@ -4,6 +4,8 @@ An AutoClicker designed for those who are terrible at clicking and Minecraft PvP
 # _**NOT PUBLISHED YET**_
 #### Currently only Supports:
 *  <img src="https://pnggrid.com/wp-content/uploads/2021/06/Windows-11-Icon-Logo.png" width="15" height="15"> Windows
+<img width="auto" height="50" alt="vts" src="https://user-images.githubusercontent.com/66027553/155564709-ac3bcf26-d87c-45f6-a0e8-49cafec6f0d9.png">
+
 ## Built with ❤️ by Nitlix
 
 * [Nitlix](https://github.com/nitlix) - The creator of this project
