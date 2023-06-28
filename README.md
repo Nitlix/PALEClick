@@ -1,4 +1,5 @@
-# 🔮 PALECLICK V1.2 [![MIT License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)]   
+# 🔮 PALECLICK V0.0.1 [![MIT License](https://img.shields.io/badge/LICENSE-MIT-brightgreen?style=for-the-badge)]   
+
 
 An AutoClicker designed for those who are terrible at clicking and Minecraft PvP.
 ## _**❗ NOT PUBLISHED YET**_
@@ -11,6 +12,14 @@ An AutoClicker designed for those who are terrible at clicking and Minecraft PvP
 
 * [Nitlix](https://github.com/nitlix) - The creator of this project
 * This app is still being developed. It may have some bugs.
+
+
+# *A NITLIX POLYGON Experiment*
+* This project may have been abandoned, or used for a case study.
+
+<img width=300 src="https://cdn.nitlix.pro/assets/polygon/from.webp">
+<br><br>
+
 
 ## Content:
 * About Paleclick
