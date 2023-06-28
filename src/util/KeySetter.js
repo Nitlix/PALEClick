@@ -1,6 +1,13 @@
+const keypress = require('keypress');
 const { strCopy } = require("./Copy");
-
 let lastKey = null;
+
+
+
+
+keypress(process.stdin);
+process.stdin.setRawMode(true);
+process.stdin.resume();
 
 process.stdin.on('keypress', (str, key) => {
     if (key.name == lastKey){
@@ -9,9 +16,16 @@ process.stdin.on('keypress', (str, key) => {
     lastKey = key.name;
 })
 
+
+
+
 async function KeySetter(){
     let currentKey = strCopy(lastKey)
-    let waiting = setInterval(()=>{
-        
+    setInterval(()=>{
+        if (currentKey != lastKey){
+            return lastKey;
+        }
     },50)
 }
+
+module.exports = KeySetter;

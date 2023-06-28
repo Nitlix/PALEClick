@@ -1,12 +1,13 @@
-// import express from 'express';
+const express = require('express')
 
 const ReadConfig = require("./util/ReadConfig")
 const Autoclicker = require('./util/Autoclicker')
 const Sleep = require("./util/Sleep")
+const { Listener, setListeningKey } = require("./util/Listener")
 
 
-// const app = express();
-// app.use(express.urlencoded({ extended: true }));
+const app = express();
+app.use(express.urlencoded({ extended: true }));
 
 // app.use((req, res, next) => {
 //   res.append('Access-Control-Allow-Origin', ['*']);
@@ -19,17 +20,15 @@ const Sleep = require("./util/Sleep")
 //   res.send('Hello World!');
 // });
 
-// const server = app.listen(3000, () => {
-//   console.log('Example app listening on port 3000!');
-//   open('http://localhost:3000');
-// });
+
 
 
 
 async function main() {
     const config = await ReadConfig()
-    await Sleep(5000)
-    
+
+    setListeningKey(config.trigger)
+    Listener(config)
 }
 
 main()

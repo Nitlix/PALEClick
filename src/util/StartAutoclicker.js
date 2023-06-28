@@ -1,17 +1,13 @@
-const Autoclicker = require("./Autoclicker");
-const CLICKS = require("./format/CLICKS");
+const {Autoclicker} = require("./Autoclicker");
 
 function StartAutoclicker(config){
-    return setTimeout(()=>{
-        Autoclicker(
-            config.click, 
-            {
-                type: config.selected,
-                config: config.types[config.selected]
-            },
-            CLICKS
-        )
-    },0)
+    Autoclicker(
+        config.click, 
+        {
+            type: config.selected,
+            config: config.types[config.selected]
+        }
+    )
 }
 
 module.exports = StartAutoclicker;

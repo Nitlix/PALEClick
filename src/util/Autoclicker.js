@@ -3,6 +3,7 @@ const Log = require("./Log.js");
 
 const NAME = require("./format/NAME.js");
 const ALLOWED_KEYS = require("./format/ALLOWED_KEYS.js");
+let DEBUG = require("./format/DEBUG.js");
 
 const Sleep = require("./Sleep.js");
 
@@ -15,10 +16,17 @@ const RandomRoam = require("./RandomRoam.js");
 
 const Click = require("./Click.js");
 
-const history = []
+
+//Process Watcher
+//Can stop the autoclicker when set to false
+let ProcessWatcher = true;
 
 
-async function Autoclicker(key, typeConfig, amount=20000){
+function StopAutoclicker(){
+    ProcessWatcher = false;
+}
+
+async function Autoclicker(key, typeConfig){
     Log.normal(`Triggered ${NAME} from key: ${key} with type: ${typeConfig.type}.`)
     
     if (!ALLOWED_KEYS.includes(key)){
@@ -33,7 +41,7 @@ async function Autoclicker(key, typeConfig, amount=20000){
 
     let BaseTime = config.drive.default;
 
-    while (Clicks < amount){
+    while (ProcessWatcher){
 
         //drive rise
         if (RandomChance(config.drive.chance)){
@@ -71,22 +79,31 @@ async function Autoclicker(key, typeConfig, amount=20000){
 
         //click
 
-       
-
         Clicks++;
 
         Click(key, Delay)
 
-        // const cps = (1000/Time).toFixed(2)
-        // Log.debug(`Clicked ${key}, starting delay ${Delay.toFixed(2)} (${cps} CPS).`)
+
+        if (DEBUG){
+            const cps = (1000/Time).toFixed(2)
+            Log.debug(`Clicked ${key}, starting delay ${Delay.toFixed(2)} (${cps} CPS).`)
+        }
+
+       
         
         // history.push({click: Clicks, delay: parseFloat(Delay.toFixed(3)), cps: parseFloat(cps)})
 
         await Sleep(Time)
     }
 
+    ProcessWatcher = true;
+
+
 
     // WriteFile("./history.json", history)
 }
 
-module.exports = Autoclicker;
+module.exports = {
+    Autoclicker,
+    StopAutoclicker
+}

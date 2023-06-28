@@ -1,9 +1,9 @@
-function strCopy(object){
+function StrCopy(object){
     return object.toString();
 }
 
 
 
 module.exports = {
-    strCopy
+    StrCopy
 }
