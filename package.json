@@ -1,0 +1,11 @@
+{
+  "name": "paleclick",
+  "version": "1.0.0",
+  "description": "An AutoClicker designed for those who are terrible at clicking and Minecraft PvP.\r ## _**❗ NOT PUBLISHED YET**_\r <img width=\"auto\" height=\"50\" alt=\"vts\" src=\"https://user-images.githubusercontent.com/66027553/155564709-ac3bcf26-d87c-45f6-a0e8-49cafec6f0d9.png\">",
+  "main": "index.js",
+  "scripts": {
+    "engine": "node src/Launch"
+  },
+  "author": "",
+  "license": "MIT"
+}
