@@ -1,4 +1,4 @@
-const Controller = require('keysender');
+const Controller = require('robotjs');
 
 function route(type, delay){
     Controller.mouseToggle("down", type)

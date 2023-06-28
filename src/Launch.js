@@ -2,6 +2,7 @@
 
 const ReadConfig = require("./util/ReadConfig")
 const Autoclicker = require('./util/Autoclicker')
+const Sleep = require("./util/Sleep")
 
 
 // const app = express();
@@ -24,17 +25,11 @@ const Autoclicker = require('./util/Autoclicker')
 // });
 
 
+
 async function main() {
     const config = await ReadConfig()
-
-    Autoclicker(
-        config.click, 
-        {
-            type: config.selected,
-            config: config.types[config.selected]
-        },
-        1000
-    )
+    await Sleep(5000)
+    
 }
 
 main()

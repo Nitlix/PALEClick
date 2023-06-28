@@ -7,5 +7,8 @@
     "engine": "node src/Launch"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
 }

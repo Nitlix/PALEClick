@@ -13,6 +13,8 @@ const RandomChance = require("./RandomChance.js");
 const WriteFile = require("./WriteFile.js");
 const RandomRoam = require("./RandomRoam.js");
 
+const Click = require("./Click.js");
+
 const history = []
 
 
@@ -73,16 +75,18 @@ async function Autoclicker(key, typeConfig, amount=20000){
 
         Clicks++;
 
-        const cps = (1000/Time).toFixed(2)
-        Log.debug(`Clicked ${key}, starting delay ${Delay.toFixed(2)} (${cps} CPS).`)
+        Click(key, Delay)
+
+        // const cps = (1000/Time).toFixed(2)
+        // Log.debug(`Clicked ${key}, starting delay ${Delay.toFixed(2)} (${cps} CPS).`)
         
-        history.push({click: Clicks, delay: parseFloat(Delay.toFixed(3)), cps: parseFloat(cps)})
+        // history.push({click: Clicks, delay: parseFloat(Delay.toFixed(3)), cps: parseFloat(cps)})
 
         await Sleep(Time)
     }
 
 
-    WriteFile("./history.json", history)
+    // WriteFile("./history.json", history)
 }
 
 module.exports = Autoclicker;
